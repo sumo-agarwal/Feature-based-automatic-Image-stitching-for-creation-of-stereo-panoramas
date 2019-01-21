@@ -39,17 +39,6 @@ The default clang on OSX doesn't contain openmp support.
 You may need gcc or different clang. See #16.
 
 
-#### Windows
-* Install cmake, VS2015
-* Set environment variable `Eigen3_DIR` to `{YOUR_EIGEN3_DIRECTORY}/eigen3/cmake`.
-* Open Visual Studio [Developer Command Prompt](https://msdn.microsoft.com/en-us/library/ms229859(v=vs.110).aspx).
-* `cd path/to/OpenPano`
-* `cmake .`
-* Open the VS2015 project and compile the project
-* copy `config.cfg` to the directory containing `image-stitching.exe`
-* The author have never used Visual Studio and this windows build process may not work for you. Feel
-	free to submit PR to improve the build process.
-
 ### Options:
 
 Three modes are available (set/unset the options in ``config.cfg``):
@@ -84,7 +73,7 @@ $ ./image-stitching <file1> <file2> ...
 
 The output file is ``out.jpg``. You can play with the [example data](https://github.com/ppwwyyxx/OpenPano/releases/tag/0.1) to start with.
 
-Before dealing with very large images (4 megapixels or more), it's better to resize them. (I might add this feature in the future)
+Before dealing with very large images (4 megapixels or more), it's better to resize them.
 
 In cylinder/translation mode, the input file names need to have the correct order.
 
@@ -133,8 +122,6 @@ Peak memory in bytes (assume each input has the same w & h):
 + Transformation: use [RANSAC](http://en.wikipedia.org/wiki/RANSAC) to estimate a homography or affine transformation.
 + Optimization: focal estimation, [bundle adjustment](https://en.wikipedia.org/wiki/Bundle_adjustment), and some straightening tricks.
 
-For details, see [my blog post](http://ppwwyyxx.com/2016/How-to-Write-a-Panorama-Stitcher/).
-
 ## Quality Guidelines
 
 To get the best stitching quality:
@@ -145,14 +132,4 @@ To get the best stitching quality:
 + The algorithm doesn't work well with wide-angle cameras where images are distorted heavily. Camera
 	parameters are needed to undistort the images.
 
-## TODOs
-+ run bundle adjustment on sphere lens instead of perspective lens
-+ improve feature detector and matching
-+ use LAZY_READ & 1 byte image in both blender to reduce peak memory
-+ clean up use of copies of `ImageRef`
-+ faster gaussian blur kernel
-+ port some hotspot (e.g. `dist.cc`) to neon
-+ support read/write EXIF metadata to:
-	+ get focal length, distortion, etc
-	+ allow pano to be viewed on Facebook
-+ python bindings
+

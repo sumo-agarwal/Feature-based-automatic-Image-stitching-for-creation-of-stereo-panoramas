@@ -4,9 +4,9 @@
 
 ## Introduction
 
-OpenPano is a panorama stitching program written in C++ from scratch (without any vision libraries). It mainly follows the routine
+THis is a panorama stitching program written in C++ from scratch (without any vision libraries). It mainly follows the routine
 described in the paper [Automatic Panoramic Image Stitching using Invariant Features](http://matthewalunbrown.com/papers/ijcv2007.pdf),
-which is also the one used by [AutoStitch](http://matthewalunbrown.com/autostitch/autostitch.html).
+
 
 [![Build Status](https://travis-ci.org/ppwwyyxx/OpenPano.svg?branch=master)](https://travis-ci.org/ppwwyyxx/OpenPano)
 

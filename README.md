@@ -75,29 +75,15 @@ Before dealing with very large images (4 megapixels or more), it's better to res
 
 In cylinder/translation mode, the input file names need to have the correct order.
 
-## Examples ([All original data available for __download__](https://github.com/ppwwyyxx/OpenPano/releases/tag/0.1)):
+## Examples :
 
 Zijing Apartment in Tsinghua University:
 ![dorm](results/apartment.jpg)
-
-"Myselves":
-![myself](results/myself.jpg)
-
 <!--
    -Zijing Playground in Tsinghua University:
    -![planet](https://github.com/ppwwyyxx/panorama/raw/master/results/planet.jpg)
 	 -->
 
-Carnegie Mellon University from 38 images
-![apple](results/apple.jpg)
-
-Newell-Simon Hall in CMU (this one is hard because objects are closer):
-![nsh](results/NSH-all.jpg)
-
-A full-view pano built from UAV images:
-![uav](results/uav.jpg)
-
-For more examples, see [results](results).
 
 ## Speed & Memory:
 Tested on Intel Core i7-6700HQ, with `ESTIMATE_CAMERA` mode:

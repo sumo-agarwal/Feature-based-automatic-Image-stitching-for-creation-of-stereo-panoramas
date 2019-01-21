@@ -1,6 +1,4 @@
-# OpenPano
 
-![cmu0](results/CMU0-all.jpg)
 
 ## Introduction
 

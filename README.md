@@ -67,7 +67,7 @@ it might be better to resize your images rather than tune the parameters.
 $ ./image-stitching <file1> <file2> ...
 ```
 
-The output file is ``out.jpg``. You can play with the [example data](https://github.com/ppwwyyxx/OpenPano/releases/tag/0.1) to start with.
+The output file is ``out.jpg``.
 
 Before dealing with very large images (4 megapixels or more), it's better to resize them.
 

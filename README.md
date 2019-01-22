@@ -79,21 +79,7 @@ Zijing Apartment in Tsinghua University:
 	 -->
 
 
-## Speed & Memory:
-Tested on Intel Core i7-6700HQ, with `ESTIMATE_CAMERA` mode:
-
-+ 11 ordered images of size 600x400: 3.2s.
-
-Memory consumption is known to be huge with default libc allocator.
-Simply using a modern allocator (e.g. tcmalloc, jemalloc) can help a lot.
-Also, setting `LAZY_READ` to 1 can save memory at the cost of a minor slow down.
-
-Peak memory in bytes (assume each input has the same w & h):
-
-+ Without `LAZY_READ` option: max(finalw \* finalh \* 12, #photos \* w \* h \* 12 + #photos \* #matched\_pairs * 96 + #keypoints * 520)
-+ With `LAZY_READ` option: max(finalw \* finalh \* 16, #threads \* w \* h \* 12, #photos \* #matched\_pairs * 96 + #keypoints * 520)
-
-## Algorithms
+# Algorithms
 + Features: [SIFT](http://en.wikipedia.org/wiki/Scale-invariant_feature_transform)
 + Transformation: use [RANSAC](http://en.wikipedia.org/wiki/RANSAC) to estimate a homography or affine transformation.
 + Optimization: focal estimation, [bundle adjustment](https://en.wikipedia.org/wiki/Bundle_adjustment), and some straightening tricks.

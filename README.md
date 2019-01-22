@@ -24,10 +24,7 @@ On Ubuntu, install dependencies by: `sudo apt install build-essential sed cmake 
 ### Compile:
 #### Linux
 ```
-$ make -C src
-```
-or
-```
+
 $ mkdir build && cd build && cmake .. && make
 ```
 

@@ -6,7 +6,6 @@ THis is a panorama stitching program written in C++ from scratch (without any vi
 described in the paper [Automatic Panoramic Image Stitching using Invariant Features](http://matthewalunbrown.com/papers/ijcv2007.pdf),
 
 
-[![Build Status]
 
 ### Compile Dependencies:
 

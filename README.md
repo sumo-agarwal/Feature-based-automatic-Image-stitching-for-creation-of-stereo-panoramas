@@ -6,7 +6,7 @@ THis is a panorama stitching program written in C++ from scratch (without any vi
 described in the paper [Automatic Panoramic Image Stitching using Invariant Features](http://matthewalunbrown.com/papers/ijcv2007.pdf),
 
 
-[![Build Status](https://travis-ci.org/ppwwyyxx/OpenPano.svg?branch=master)](https://travis-ci.org/ppwwyyxx/OpenPano)
+[![Build Status]
 
 ### Compile Dependencies:
 
@@ -19,8 +19,6 @@ described in the paper [Automatic Panoramic Image Stitching using Invariant Feat
 
 Eigen, CImg and FLANN are header-only, to simplify the compilation on different platforms.
 CImg and libjpeg are only used to read and write images, so you can easily get rid of them.
-
-On ArchLinux, install dependencies by: `sudo pacman -S gcc sed cmake make libjpeg eigen`
 
 On Ubuntu, install dependencies by: `sudo apt install build-essential sed cmake libjpeg-dev libeigen3-dev`
 
@@ -89,8 +87,6 @@ Zijing Apartment in Tsinghua University:
 Tested on Intel Core i7-6700HQ, with `ESTIMATE_CAMERA` mode:
 
 + 11 ordered images of size 600x400: 3.2s.
-+ 13 ordered images of size 1500x1112: 6s.
-+ 38 unordered images of size 1300x867 (high vertical FOV): 51s.
 
 Memory consumption is known to be huge with default libc allocator.
 Simply using a modern allocator (e.g. tcmalloc, jemalloc) can help a lot.

@@ -22,7 +22,7 @@ CImg and libjpeg are only used to read and write images, so you can easily get r
 On Ubuntu, install dependencies by: `sudo apt install build-essential sed cmake libjpeg-dev libeigen3-dev`
 
 ### Compile:
-#### Linux / OSX / WSL (bash on windows)
+#### Linux
 ```
 $ make -C src
 ```
@@ -30,9 +30,6 @@ or
 ```
 $ mkdir build && cd build && cmake .. && make
 ```
-The default clang on OSX doesn't contain openmp support.
-You may need gcc or different clang. See #16.
-
 
 ### Options:
 
@@ -41,7 +38,7 @@ Three modes are available (set/unset the options in ``config.cfg``):
 	+ You are __only__ turning left (or right) when taking the images (as is usually done), no
 		translations or other type of rotations allowed.
 	+ Images are taken with the same camera, with a known ``FOCAL_LENGTH`` set in config.
-	+ Images are given in the left-to-right order. (I might fix this in the future)
+	+ Images are given in the left-to-right order.
 
 + __camera estimation mode__. No translation is the only requirement on cameras.
   It can usually work well as long as you don't have too few images.

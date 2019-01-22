@@ -79,7 +79,7 @@ Zijing Apartment in Tsinghua University:
 	 -->
 
 
-# Algorithms
+## Algorithms
 + Features: [SIFT](http://en.wikipedia.org/wiki/Scale-invariant_feature_transform)
 + Transformation: use [RANSAC](http://en.wikipedia.org/wiki/RANSAC) to estimate a homography or affine transformation.
 + Optimization: focal estimation, [bundle adjustment](https://en.wikipedia.org/wiki/Bundle_adjustment), and some straightening tricks.
